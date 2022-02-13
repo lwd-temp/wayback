@@ -4,7 +4,20 @@
 
 package reduxer // import "github.com/wabarc/wayback/reduxer"
 
+import (
+	"strings"
+
+	"github.com/go-shiori/go-readability"
+	"github.com/wabarc/wayback/tagging"
+)
+
 func BundleExample() Reduxer {
+	textContent := `Example Domain
+This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.
+More information...`
+	r := strings.NewReader(textContent)
+	art, _ := readability.FromReader(r, nil)
+
 	rdx := NewReduxer()
 	bnd := &bundle{
 		artifact: Artifact{
@@ -58,6 +71,8 @@ func BundleExample() Reduxer {
 				},
 			},
 		},
+		article: art,
+		tags:    tagging.Annotation{"information", "more", "asking"},
 	}
 
 	rdx.Store(Src("https://example.com/"), bnd)

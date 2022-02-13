@@ -1,8 +1,8 @@
 module github.com/wabarc/wayback
 
-// +heroku goVersion go1.17
+// +heroku goVersion go1.18
 
-go 1.17
+go 1.18
 
 require (
 	github.com/bwmarrin/discordgo v0.23.3-0.20210627161652-421e14965030
@@ -39,8 +39,8 @@ require (
 	github.com/wabarc/screenshot v1.5.1-0.20220318140348-632a135d50db
 	github.com/wabarc/telegra.ph v0.0.0-20220304132636-fce723bd6eae
 	github.com/wabarc/warcraft v0.2.2-0.20211107142816-7beea5a75ab5
+	github.com/zoomio/tagify v0.53.0
 	go.etcd.io/bbolt v1.3.6
-	golang.org/x/crypto v0.0.0-20220315160706-3147a52a75dd // indirect
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	gopkg.in/telebot.v3 v3.0.0-20220130115853-f0291132d3c3
@@ -51,6 +51,7 @@ require (
 	github.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403 // indirect
 	github.com/PuerkitoBio/goquery v1.8.0 // indirect
 	github.com/VividCortex/ewma v1.2.0 // indirect
+	github.com/abadojack/whatlanggo v1.0.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
@@ -82,6 +83,7 @@ require (
 	github.com/ipfs/go-ipfs-files v0.1.1 // indirect
 	github.com/itchyny/gojq v0.12.7 // indirect
 	github.com/itchyny/timefmt-go v0.1.3 // indirect
+	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kallydev/telegraph-go v1.0.0 // indirect
@@ -125,8 +127,11 @@ require (
 	github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80 // indirect
 	github.com/wabarc/imgbb v1.0.0 // indirect
 	github.com/wabarc/memento v0.0.0-20210703205719-adc2f8ab8bae // indirect
-	github.com/whyrusleeping/tar-utils v0.0.0-20201201191210-20a61371de5b // indirect
+	github.com/whyrusleeping/tar-utils v0.0.0-20180509141711-8c6c8ba81d5c // indirect
 	github.com/ybbus/httpretry v1.0.1 // indirect
+	github.com/zoomio/inout v0.11.0 // indirect
+	github.com/zoomio/stopwords v0.7.0 // indirect
+	golang.org/x/crypto v0.0.0-20220315160706-3147a52a75dd // indirect
 	golang.org/x/sys v0.0.0-20220227234510-4e6760a101f9 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect

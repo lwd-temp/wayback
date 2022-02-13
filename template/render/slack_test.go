@@ -9,7 +9,11 @@ import (
 )
 
 func TestRenderSlack(t *testing.T) {
-	message := `Internet Archive:
+	message := `Example Domain
+This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.
+More information...
+
+Internet Archive:
 • https://web.archive.org/web/20211000000001/https://example.com/
 
 archive.today:

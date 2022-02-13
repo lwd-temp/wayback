@@ -33,6 +33,7 @@ import (
 	"github.com/wabarc/warcraft"
 	"github.com/wabarc/wayback/config"
 	"github.com/wabarc/wayback/errors"
+	"github.com/wabarc/wayback/tagging"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -61,6 +62,7 @@ type bundle struct {
 	artifact Artifact
 	article  readability.Article
 	shots    *screenshot.Screenshots
+	tags     tagging.Annotation
 }
 
 // Artifact represents the file paths stored on the local disk.
@@ -138,6 +140,11 @@ func (b *bundle) Artifact() Artifact {
 // Article returns a readability.Article from bundle.
 func (b *bundle) Article() readability.Article {
 	return b.article
+}
+
+// Tags returns a tagging.Annotation from bundle.
+func (b *bundle) Tags() tagging.Annotation {
+	return b.tags
 }
 
 // Do executes secreenshot, print PDF and export html of given URLs
@@ -235,7 +242,13 @@ func Do(ctx context.Context, urls ...*url.URL) (Reduxer, error) {
 			if err := remotely(ctx, &artifact); err != nil {
 				logger.Error("upload files to remote server failed: %v", err)
 			}
-			bundle := &bundle{shots: shot, artifact: artifact, article: article}
+			// Retrieve tags from text content
+			tags, err := tagging.Retrieve(ctx, article)
+			logger.Debug("retrieved tags: %v", tags)
+			if err != nil {
+				logger.Error("retrieve tags failed: %v", err)
+			}
+			bundle := &bundle{shots: shot, artifact: artifact, article: article, tags: tags}
 			bs.Store(Src(shot.URL), bundle)
 		}(shot)
 	}
