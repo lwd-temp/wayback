@@ -201,6 +201,8 @@ func (p *Parser) parseLines(lines []string) (err error) {
 			p.opts.waybackUserAgent = parseString(val, defWaybackUserAgent)
 		case "WAYBACK_FALLBACK":
 			p.opts.waybackFallback = parseBool(val, defWaybackFallback)
+		case "ENABLED_SCHEDULER":
+			p.opts.enabledScheduler = parseBool(val, defEnabledScheduler)
 		default:
 			if os.Getenv(key) == "" && val != "" {
 				os.Setenv(key, val)

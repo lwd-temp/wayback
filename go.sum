@@ -701,6 +701,7 @@ github.com/wabarc/helper v0.0.0-20210614160629-1a5ba5e551eb/go.mod h1:TuTZtoiOu9
 github.com/wabarc/helper v0.0.0-20210701193643-e0fe0a807cb9/go.mod h1:TuTZtoiOu984UWOf7FfX58JllKMjq7FCz701kB5W88E=
 github.com/wabarc/helper v0.0.0-20210718171053-59c70d0b20c2/go.mod h1:uS6mimKlWkGvEZXkJ6JoW7LYnnB2JP6dLU9q7pgDaWQ=
 github.com/wabarc/helper v0.0.0-20211225065210-3d35291efe54/go.mod h1:uS6mimKlWkGvEZXkJ6JoW7LYnnB2JP6dLU9q7pgDaWQ=
+github.com/wabarc/helper v0.0.0-20220220012023-0697c095968c/go.mod h1:uS6mimKlWkGvEZXkJ6JoW7LYnnB2JP6dLU9q7pgDaWQ=
 github.com/wabarc/helper v0.0.0-20220320101038-dbb2ea36249b h1:eBee82cXn3HoLWopCPBatja684Ff/Y/uH+U3Va8IY3M=
 github.com/wabarc/helper v0.0.0-20220320101038-dbb2ea36249b/go.mod h1:JGo6GZ+m/xGV63ZiNH0apOrWczV/f8w2JzjoTOg8u58=
 github.com/wabarc/imgbb v1.0.0 h1:vNud9qY4dRGp1nikb+GHIrc/sE3WOdNq5gfT/vhWEUQ=
@@ -719,6 +720,8 @@ github.com/wabarc/rivet v0.0.0-20220207154318-37fc56bcf4e1/go.mod h1:aWsIBu+Jr99
 github.com/wabarc/screenshot v1.4.1-0.20220304125241-bd18edec744e/go.mod h1:zacDw0LvNwstoCSqu2BYm8drXYOZ877TfDE6KhBEswY=
 github.com/wabarc/screenshot v1.5.1-0.20220318140348-632a135d50db h1:CUnpFXuJer3n+UGPtJyA/lKLpfA/Wo0n+pbjGpzFA8Q=
 github.com/wabarc/screenshot v1.5.1-0.20220318140348-632a135d50db/go.mod h1:MJAoWa51BLqshJp+GQmoLJe4Q4Q6QCkcHMO1GYmucEE=
+github.com/wabarc/starter v0.4.0 h1:XHwxasRqrRlq5pU7xSBWrWNgvKvdvxZDnu9uw7XY8/c=
+github.com/wabarc/starter v0.4.0/go.mod h1:7Bf5sDTAUdX1gGXJuM6PWRquCZoiM2prgBvFvpGYaUE=
 github.com/wabarc/telegra.ph v0.0.0-20220304132636-fce723bd6eae h1:qxDauBAL0F3P/Mc4bC0qCnM2UQq9LK9pP3BY/N7tXkI=
 github.com/wabarc/telegra.ph v0.0.0-20220304132636-fce723bd6eae/go.mod h1:s4RHlPLzyJ7nX4+3UHp+WfVZb0hPefHUl319kVBPLtg=
 github.com/wabarc/warcraft v0.2.2-0.20211107142816-7beea5a75ab5 h1:jY/jqIy/ddCMWWWuTIeAazE5F4QW8HAIvlI69XMJ1ew=

@@ -82,6 +82,7 @@ const (
 	defWaybackMaxRetries   = 2
 	defWaybackUserAgent    = "WaybackArchiver/1.0"
 	defWaybackFallback     = false
+	defEnabledScheduler    = false
 )
 
 var (
@@ -120,6 +121,7 @@ type Options struct {
 	waybackMaxRetries   int
 	waybackUserAgent    string
 	waybackFallback     bool
+	enabledScheduler    bool
 }
 
 type ipfs struct {
@@ -218,6 +220,7 @@ func NewOptions() *Options {
 		waybackMaxRetries:   defWaybackMaxRetries,
 		waybackUserAgent:    defWaybackUserAgent,
 		waybackFallback:     defWaybackFallback,
+		enabledScheduler:    defEnabledScheduler,
 		ipfs: &ipfs{
 			host:   defIPFSHost,
 			port:   defIPFSPort,
@@ -707,4 +710,9 @@ func (o *Options) WaybackUserAgent() string {
 // the original webpage is unavailable.
 func (o *Options) WaybackFallback() bool {
 	return o.waybackFallback
+}
+
+// EnabledScheduler returns whether the Wayback Scheduling service is enabled.
+func (o *Options) EnabledScheduler() bool {
+	return o.enabledScheduler
 }

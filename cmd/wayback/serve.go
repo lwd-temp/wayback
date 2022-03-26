@@ -23,6 +23,7 @@ import (
 	"github.com/wabarc/wayback/service/slack"
 	"github.com/wabarc/wayback/service/telegram"
 	"github.com/wabarc/wayback/service/twitter"
+	"github.com/wabarc/wayback/planner"
 	"github.com/wabarc/wayback/storage"
 	"github.com/wabarc/wayback/systemd"
 )
@@ -46,6 +47,12 @@ func serve(_ *cobra.Command, _ []string) {
 	ctx, cancel := context.WithCancel(context.Background())
 	pool := pooling.New(ctx, config.Opts.PoolingSize())
 	go pool.Roll()
+
+	if config.Opts.EnabledScheduler() {
+		sched := planner.New()
+		defer sched.Stop()
+		sched.Start(ctx)
+	}
 
 	srv := &service{}
 	_ = srv.run(ctx, store, pool)
