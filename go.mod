@@ -23,7 +23,7 @@ require (
 	github.com/mattn/go-mastodon v0.0.5-0.20210515144304-86627ec7d635
 	github.com/phf/go-queue v0.0.0-20170504031614-9abe38d0371d
 	github.com/pkg/errors v0.9.1
-	github.com/prometheus/client_golang v1.12.1
+	github.com/prometheus/client_golang v1.12.2
 	github.com/prometheus/common v0.32.1
 	github.com/slack-go/slack v0.10.2
 	github.com/spf13/cobra v1.4.0
@@ -49,8 +49,12 @@ require (
 )
 
 require (
+	github.com/PuerkitoBio/goquery v1.8.0
+	github.com/wabarc/imgbb v1.0.0
+)
+
+require (
 	github.com/MercuryEngineering/CookieMonster v0.0.0-20180304172713-1584578b3403 // indirect
-	github.com/PuerkitoBio/goquery v1.8.0 // indirect
 	github.com/VividCortex/ewma v1.2.0 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -124,7 +128,6 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/tdewolff/parse/v2 v2.5.27 // indirect
 	github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80 // indirect
-	github.com/wabarc/imgbb v1.0.0 // indirect
 	github.com/wabarc/memento v0.0.0-20210703205719-adc2f8ab8bae // indirect
 	github.com/whyrusleeping/tar-utils v0.0.0-20201201191210-20a61371de5b // indirect
 	github.com/ybbus/httpretry v1.0.1 // indirect
