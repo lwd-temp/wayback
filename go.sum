@@ -559,6 +559,8 @@ github.com/orisano/pixelmatch v0.0.0-20210112091706-4fa4c7ba91d5 h1:1SoBaSPudixR
 github.com/orisano/pixelmatch v0.0.0-20210112091706-4fa4c7ba91d5/go.mod h1:nZgzbfBr3hhjoZnS66nKrHmduYNpc34ny7RK4z5/HM0=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
+github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 h1:onHthvaw9LFnH4t2DcNVpwGmV9E1BkGknEliJkfwQj0=
+github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58/go.mod h1:DXv8WO4yhMYhSNPKjeNKa5WY9YCIEBRbNzFFPJbWO6Y=
 github.com/pelletier/go-toml v1.2.0/go.mod h1:5z9KED0ma1S8pY6P1sdut58dfprrGBbd/94hg7ilaic=
 github.com/pelletier/go-toml v1.9.4/go.mod h1:u1nR/EPcESfeI/szUZKdtJ0xRNbUoANCkoOuaOx1Y+c=
 github.com/phf/go-queue v0.0.0-20170504031614-9abe38d0371d h1:U+PMnTlV2tu7RuMK5etusZG3Cf+rpow5hqQByeCzJ2g=
@@ -722,8 +724,8 @@ github.com/wabarc/playback v0.0.0-20210718054702-cab6c6004933/go.mod h1:or8QaM2w
 github.com/wabarc/rivet v0.0.0-20220207154318-37fc56bcf4e1 h1:4TKACQ7hhNwQ4SUaIVXAibaqSs5r/4CrgaYL/+HtEak=
 github.com/wabarc/rivet v0.0.0-20220207154318-37fc56bcf4e1/go.mod h1:aWsIBu+Jr99P+G8KZ/NS/e6Yr5OEamt3i397U31QRu8=
 github.com/wabarc/screenshot v1.5.0/go.mod h1:zacDw0LvNwstoCSqu2BYm8drXYOZ877TfDE6KhBEswY=
-github.com/wabarc/screenshot v1.5.1-0.20220318140348-632a135d50db h1:CUnpFXuJer3n+UGPtJyA/lKLpfA/Wo0n+pbjGpzFA8Q=
-github.com/wabarc/screenshot v1.5.1-0.20220318140348-632a135d50db/go.mod h1:MJAoWa51BLqshJp+GQmoLJe4Q4Q6QCkcHMO1GYmucEE=
+github.com/wabarc/screenshot v1.5.1 h1:qVMMGZhumo9l7mPcg7MrqgeqSEysTqSP+roRdwtiOXQ=
+github.com/wabarc/screenshot v1.5.1/go.mod h1:PtH8hzfT/ZLo4zEuKoCrcXNVZqeKR9Z0/ll5Q77NTvY=
 github.com/wabarc/telegra.ph v0.0.0-20220501011455-b0b8c35c6d09 h1:suVFVJmwPmO9nll/IKv+ud5mwtCSN+IaH7dlvpsfPqk=
 github.com/wabarc/telegra.ph v0.0.0-20220501011455-b0b8c35c6d09/go.mod h1:b+6k5eTiZAyEyPpTJZOi6t6DqeWp+i+lmCEmOYkQO6o=
 github.com/wabarc/warcraft v0.2.2-0.20211107142816-7beea5a75ab5 h1:jY/jqIy/ddCMWWWuTIeAazE5F4QW8HAIvlI69XMJ1ew=
